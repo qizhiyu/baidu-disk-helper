@@ -7,10 +7,12 @@
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "grab a bargin"
   },
   "permissions": [
     "activeTab",
-    "http://www.trademe.co.nz/"
+    "http://www.trademe.co.nz/", 
+    "https://ajax.googleapis.com/"
   ]
 }
