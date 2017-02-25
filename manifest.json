@@ -10,6 +10,13 @@
     "default_popup": "popup.html",
     "default_title": "grab a bargin"
   },
+  "content_scripts": [
+    {
+      "matches": ["http://www.trademe.co.nz/*"],
+      "css": ["mystyles.css"],
+      "js": ["content.js"]
+    }
+  ],
   "permissions": [
     "activeTab",
     "http://www.trademe.co.nz/", 
