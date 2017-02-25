@@ -62,10 +62,16 @@ function testRenderResult() {
         div.style.backgroundColor = 'red';
     }
 
-    renderResult(result.HouseHistories);
+    render(result);
     status = document.getElementById('status');
 
     if (status.innerHTML != output)
         console.log("Error in testRenderResult" );
+
+    result.History = "2017-02-14T14:59:16.28\tPrice by negotiation\n";
+    render(result);
+    status = document.getElementById('status');
+    if (status.innerHTML != "2017-02-14T14:59:16.28&nbsp;Price by negotiation<br>")
+        console.log("Error in testRenderResult");
 
 }
