@@ -49,9 +49,10 @@ function getHistory(url, callback, errorCallback) {
 function createElement() {
     var table = document.getElementById('ListingAttributes');
     var row = table.insertRow(0);
-    var cell1 = row.insertCell(0);
+    var cell1 = document.createElement('th');
+    cell1.innerHTML = "Price History:";
+    row.appendChild(cell1);
     var cell2 = row.insertCell(1);
-    cell1.innerHTML = "Price History";
     return cell2;
 }
 
