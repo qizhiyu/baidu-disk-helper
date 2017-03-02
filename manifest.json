@@ -14,7 +14,8 @@
     {
       "matches": ["http://www.trademe.co.nz/*"],
       "css": ["mystyles.css"],
-      "js": ["content.js"]
+      "js": [ "content.js" ],
+      "run_at": "document_end"
     }
   ],
   "permissions": [
