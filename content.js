@@ -46,8 +46,21 @@ function getHistory(url, callback, errorCallback) {
     x.send();
 }
 
+function createElementForExpired() {
+	var main = document.getElementById('mainContent');
+	var cell1 = document.createElement('h1');
+	cell1.innerHTML = "Price History:";
+	main.appendChild(cell1);
+	var cell2 = document.createElement('div');
+	main.appendChild(cell2);
+	return cell2;
+}
+
 function createElement() {
-    var table = document.getElementById('ListingAttributes');
+	var table = document.getElementById('ListingAttributes');
+	if (table == null)
+		return createElementForExpired();
+
     var row = table.insertRow(0);
     var cell1 = document.createElement('th');
     cell1.innerHTML = "Price History:";
