@@ -25,8 +25,8 @@ function getHistory(url, callback, errorCallback) {
         return;
     }
 
-    //TODO: load history from API
-    var searchUrl = "http://192.168.1.9/bo" + "/api/houses/" + String(id);
+    //load history from API
+    var searchUrl = "http://zys-635issio.cloudapp.net/tmbo" + "/api/houses/" + String(id);
     var x = new XMLHttpRequest();
     x.open('GET', searchUrl);
     // The Google image search API responds with JSON, so let Chrome parse it.
